@@ -59,3 +59,9 @@ else if (days > 1) {
 else {
 	console.log('tomorrow');
 }
+
+// log out 
+if (args.j) {
+	console.log(data);
+	process.exit(0);
+}
