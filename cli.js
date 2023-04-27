@@ -48,3 +48,14 @@ else {
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=weathercode,temperature_2m_max,precipitation_hours,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=' + timezone);
 //get data
 const data = await response.json();
+//set days 
+const days = args.d;
+if (days == 0) {
+	console.log('today.');
+}
+else if (days > 1) {
+	console.log('in ' + days + ' days.');
+}
+else {
+	console.log('tomorrow');
+}
