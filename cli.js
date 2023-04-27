@@ -22,3 +22,23 @@ if (args.h) {
 //time zone
 const timezone = moment.tz.guess();
 
+//set longitude and latitude
+if (args.n) { 
+	lat = args.n;
+}
+else if (args.s) {
+	lat = -args.s;
+}
+else {
+	console.log('Latitude out of range');
+}
+
+if (args.e) {
+	lon = args.e;
+}
+else if (args.w) {
+	lon = -args.w;
+}
+else {
+	console.log('Longitude out of range');
+}
