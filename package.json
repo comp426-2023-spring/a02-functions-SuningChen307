@@ -1,13 +1,21 @@
 {
   "name": "a02-functions-suningchen307",
   "version": "1.0.0",
-  "description": "This assignment will help you learn to create an installable Node.js command line utility.",
+  "description": "This assignment is to create an installable Node.js command line utility.",
   "main": "index.js",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-SuningChen307.git"
+  },
   "author": "SuningChen",
   "license": "GPL-3.0+",
+   "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-SuningChen307/issues"
+  },
+   "homepage": "https://github.com/comp426-2023-spring/a02-functions-SuningChen307#readme",
   "dependencies": {
     "minimist": "^1.2.8",
     "moment-timezone": "^0.5.43",
