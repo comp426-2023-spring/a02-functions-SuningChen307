@@ -41,9 +41,6 @@ if (args.e) {
 else if (args.w) {
 	longitude = -args.w;
 }
-//else {
-//	console.log('Longitude out of range');
-//}
 //request URL
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=weathercode,temperature_2m_max,precipitation_hours,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=' + timezone);
 //get data
