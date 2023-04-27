@@ -31,9 +31,9 @@ if (args.n) {
 else if (args.s) {
 	latitude = -args.s;
 }
-//else {
-//	console.log('Latitude out of range');
-//}
+else {
+	console.log('Latitude must be in range');
+}
 
 if (args.e) {
 	longitude = args.e;
